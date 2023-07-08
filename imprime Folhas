@@ -1,0 +1,10 @@
+	public void impFolhas(No r) {
+		if (r != null) {
+			if (r.esq == null && r.dir == null) {
+				System.out.println(r.valor);
+			} else {
+				impFolhas(r.esq);
+				impFolhas(r.dir);
+			}
+		}
+	}
